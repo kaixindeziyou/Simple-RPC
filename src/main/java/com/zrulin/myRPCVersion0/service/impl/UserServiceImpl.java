@@ -16,7 +16,7 @@ public class UserServiceImpl implements UserService {
         System.out.println("客户端查询了id为："+id+"的用户");
         //模拟从数据库中取数据的行为
         Random random = new Random();
-        User user = new User(id,UUID.randomUUID().toString(),random.nextInt(100));
+        User user = new User(id,UUID.randomUUID().toString(),random.nextBoolean());
         return user;
     }
 }
